@@ -1,0 +1,90 @@
+span {
+  padding: 5px;
+}
+
+/*Headers, Paragraph*/
+.post {
+  display: block;
+}
+.post h1 {
+  background: #008000;
+  padding: 3px 10px;
+  display: inline-block;
+}
+.post h2 {
+  background: #61da61;
+  display: inline-block;
+  padding: 3px 10px;
+}
+.post p {
+  background: #0303d6;
+  padding: 3px 10px;
+  color: #fff;
+}
+
+/*Buttons*/
+.btn {
+  border: 2px solid green;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: green;
+}
+.btn:hover {
+  background: green;
+  color: white;
+  transition: 0.5s ease;
+}
+
+/*Lists*/
+.list ul {
+  border: 2px solid #ca3620;
+  display: inline-block;
+  padding: 20px;
+  text-align: justify;
+}
+.list ul li {
+  border: 1px solid #dbb717;
+  padding: 5px;
+  margin: 5px;
+}
+.list ul li .link:link {
+  color: black;
+}
+.list ul li .link:hover {
+  color: orange;
+}
+.list ul li .link:visited {
+  color: green;
+}
+.list ul li .link:active {
+  color: blue;
+}
+.list ul li .alert:link {
+  color: red;
+}
+.list ul li .alert:hover {
+  color: orange;
+}
+.list ul li .alert:visited {
+  color: green;
+}
+.list ul li .alert:active {
+  color: blue;
+}
+
+.input-group .input-field {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+.input-group .input-field #name {
+  border: 2px solid #FF9800;
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.input-group .input-field2 {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}

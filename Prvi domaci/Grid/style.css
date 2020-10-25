@@ -1,0 +1,115 @@
+:root{
+    --header: #ff6e6e;
+    --titleBody: #6c9ed5;
+    --sidebar-1: #6cd5a4;
+    --sidebar-2: #c1d56c;
+    --body: #61cdd5;
+    --footer: #cc8bc8;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headers{
+    background: lightgray;
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template: "col-1 col-1 col-1 col-1"
+                   "col-2 col-2 col-3 col-4"
+                   "col-2 col-2 col-5 col-5"
+                   "col-6 col-7 col-7 col-8"
+                   "col-9 col-9 col-9 col-9";
+    grid-template-rows: 100px 1fr 1fr 200px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.col-1{
+    grid-area: col-1;
+    background: var(--header);
+    
+}
+.col-2{
+    grid-area: col-2;
+    background: var(--titleBody);
+}
+.col-3{
+    grid-area: col-3;
+    background: var(--sidebar-1);
+}
+.col-4{
+    grid-area: col-4;
+    background: var(--sidebar-1);
+}
+.col-5{
+    grid-area: col-5;
+    background: var(--sidebar-2);
+}
+.col-6{
+    grid-area: col-6;
+    background: var(--body);
+}
+.col-7{
+    grid-area: col-7;
+    background: var(--body);
+}
+.col-8{
+    grid-area: col-8;
+    background: var(--body);
+}
+
+.col-9{
+    grid-area: col-9;
+    background: var(--footer);
+}
+
+
+
+@media (max-width: 379px){
+    .headers{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 2fr 2fr 2fr 2fr 1.2fr 1.2fr 1.2fr 0.6fr;
+grid-template-areas: "col-1"
+                     "col-2"
+                     "col-3"
+                     "col-4"
+                     "col-5"
+                     "col-6"
+                     "col-7"
+                     "col-8"
+                     "col-9";
+    } 
+}
+
+@media(max-width: 1023px) and (min-width: 379px){
+       .headers{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 1.6fr 1.6fr  1fr;
+grid-template:       "col-1 col-1"
+                     "col-2 col-2"
+                     "col-2 col-2"
+                     "col-5 col-5"
+                     "col-3 col-4"
+                     "col-7 col-7"
+                     "col-6 col-8"
+                     "col-9 col-9"
+                     } 
+}
+@media(max-width: 1280px) and (min-width: 1023px){
+    .headers{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1.6fr 3fr 3fr 2.4fr 2.4fr 3fr 3fr 1.6fr;
+grid-template:             "col-1 col-1 col-1 col-1"
+                           "col-2 col-2 col-2 col-3"
+                           "col-2 col-2 col-2 col-4"
+                           "col-5 col-5 col-5 col-5"
+                           "col-5 col-5 col-5 col-5"
+                           "col-6 col-6 col-8 col-8"
+                           "col-7 col-7 col-7 col-7"
+                           "col-9 col-9 col-9 col-9"
+                     } 
+}

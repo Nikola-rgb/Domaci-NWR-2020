@@ -1,0 +1,118 @@
+// SCSS
+
+span {
+  padding: 5px;
+}
+
+@mixin btn{
+    border: 2px solid green;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: green;
+    &:hover{
+        background: green;
+        color: white;
+        transition: .5s ease;
+    }
+}
+
+     
+
+
+/*Headers, Paragraph*/
+
+.post{
+    display: block;
+    h1{
+        background: #008000;
+        padding: 3px 10px;
+        display: inline-block;
+    }
+    h2{
+        background: #61da61;
+        display: inline-block;
+        padding: 3px 10px;
+    }
+    p{
+        background: #0303d6;
+        padding: 3px 10px;
+        color: #fff;
+        
+    }
+}
+
+/*Buttons*/
+
+.btn{
+    @include btn;
+}
+
+
+/*Lists*/
+.list{
+    ul{
+        border: 2px solid #ca3620;
+        display: inline-block;
+        padding: 20px;
+        text-align: justify;
+        li{
+            border: 1px solid #dbb717;
+            padding: 5px;
+            margin: 5px;
+            .link{
+                &:link{
+                    color: black;
+                }
+                &:hover{
+                    color: orange;
+                }
+                &:visited{
+                    color: green;
+                }
+                &:active{
+                    color: blue;
+                }
+                
+            }
+            .alert{
+                 &:link{
+                    color: red;
+                }
+                 &:hover{
+                    color: orange;
+                }
+                &:visited{
+                    color: green;
+                }
+                &:active{
+                    color: blue;
+                }
+            }
+        }
+
+        
+        }
+}
+
+
+.input-group{
+   
+    .input-field{
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        #name {
+        border: 2px solid #FF9800;
+        padding: 5px 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        }
+    }
+    .input-field2{
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+    }
+}
+
+
