@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+$font: 'Ubuntu', sans-serif;
+
+@mixin btn{
+    padding: 10px 25px;
+    color: white;
+    background: blue;
+    border: none;
+    margin: 10px 5px;
+    box-shadow: 5px 6px 10px gray;
+    border-radius: 5px;
+    &:hover{
+        background: #6c8aef;
+        transition: .4s ease;
+        cursor: pointer;
+    }
+    
+    
+}
+
+/*Basic styles*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font;
+    line-height: 1.6;
+ 
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+
+/*Section*/
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    .container{
+        display: flex;
+        border: 2px solid red;
+        height: 300px;
+        width: 1100px;
+        
+        .row{
+            display: flex;
+            height: 100%;
+            width: auto;
+           
+            
+            
+            .first{
+                flex: 0 0 50%;
+                width: 50%;
+                img{
+                   height: 55%;
+                   width: 95%;
+                   margin: 10px 10px 0 10px;
+                    }
+                p{
+                    margin: 5px 10px;
+                    font-size: 0.8rem;
+                    height: 40%;
+                    color: dimgray;
+                }
+            }
+            .last{
+                flex: 0 0 50%;
+                ul{
+                   
+                    li{
+                          &:first-child{
+                        background: #6c8aef;}
+                        font-size: 0.9rem;
+                        margin-top: 20px;
+                        padding: 0 5px;
+                        border: 2px solid blue;
+                        display: inline-block;
+                        color: dimgray;
+                        
+                    }
+                }
+                .button {
+                    text-align: right;
+                    .btn{
+                        @include btn;
+                    }
+                }
+            }
+        }
+    }
+}
