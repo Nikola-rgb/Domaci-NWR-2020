@@ -47,12 +47,12 @@ ul{
 
 section{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: auto;
     .container{
-        display: flex;
         border: 2px solid red;
         height: 300px;
         width: 1100px;
@@ -84,14 +84,17 @@ section{
                 ul{
                    
                     li{
-                          &:first-child{
-                        background: #6c8aef;}
                         font-size: 0.9rem;
                         margin-top: 20px;
                         padding: 0 5px;
                         border: 2px solid blue;
                         display: inline-block;
-                        color: dimgray;
+                           &:hover{
+                        background: #6c8aef;
+                              }
+                        a{
+                            color: dimgray;
+                        }
                         
                     }
                 }
@@ -104,4 +107,13 @@ section{
             }
         }
     }
+    hr{
+        margin-top: 30px;
+        width: 1120px; 
+        color: #d9d3d3;
+        
+        text-align: center;
+        
+    }
+
 }

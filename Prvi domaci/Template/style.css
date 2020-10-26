@@ -18,13 +18,13 @@ ul {
 /*Section*/
 section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: auto;
 }
 section .container {
-  display: flex;
   border: 2px solid red;
   height: 300px;
   width: 1100px;
@@ -58,10 +58,12 @@ section .container .row .last ul li {
   padding: 0 5px;
   border: 2px solid blue;
   display: inline-block;
-  color: dimgray;
 }
-section .container .row .last ul li:first-child {
+section .container .row .last ul li:hover {
   background: #6c8aef;
+}
+section .container .row .last ul li a {
+  color: dimgray;
 }
 section .container .row .last .button {
   text-align: right;
@@ -79,4 +81,10 @@ section .container .row .last .button .btn:hover {
   background: #6c8aef;
   transition: 0.4s ease;
   cursor: pointer;
+}
+section hr {
+  margin-top: 30px;
+  width: 1120px;
+  color: #d9d3d3;
+  text-align: center;
 }
