@@ -64,6 +64,9 @@ a {
 }
 .container .left {
   background-image: linear-gradient(rgba(54, 122, 198, 0.73), rgba(54, 122, 198, 0.73)), url(assets/NoPath%20-%20Copy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   flex: 0 0 50%;
   display: flex;
   justify-content: center;
