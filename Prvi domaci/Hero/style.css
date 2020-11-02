@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@keyframes social {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /****************
 basic styles
 ****************/
@@ -72,9 +77,13 @@ a {
   transition: 0.5s ease;
 }
 .nav-bar .social-holder a img {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   margin-right: 10px;
+}
+.nav-bar .social-holder a img:hover {
+  animation: social 0.7s ease;
+  box-shadow: 1px 1px 20px #445a71;
 }
 @media (max-width: 768px) {
   .nav-bar .social-holder a img {

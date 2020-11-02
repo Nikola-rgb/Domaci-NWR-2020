@@ -11,6 +11,13 @@ $transition: .5s ease;
 $white: #fff;
 
 
+
+@keyframes social{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 @mixin image {
     width: 100px;
     height: 100px;
@@ -21,7 +28,7 @@ $white: #fff;
     &:hover{
      transition: $transition;
      transform: scale(1.2);
-     cursor: pointer;   
+     cursor: pointer;     
     }
 }
 @mixin image-responisve {
@@ -116,9 +123,13 @@ a{
         }     
   }
     .social-holder a img{
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
         margin-right: 10px;
+        &:hover{
+            animation: social .7s ease;
+            box-shadow: 1px 1px 20px $icons;
+        }
          @media(max-width: 768px){
                height: 17px;
                width: 17px;
